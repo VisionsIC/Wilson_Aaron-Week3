@@ -1,0 +1,408 @@
+/*
+ Aaron Robert Wilson
+ October 14, 2015 - Week 3
+ FWF Course | 201510-01
+ Student ID: 0004619821
+ Professor: Sean Bernath
+ Full Sail University
+
+ Assignment - C.R.U.D. Application - style.css
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&subset=latin,latin-ext);
+
+/* reset css styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/* global css styles */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+html {
+  position: relative;
+  bottom: 50px;
+  margin-top: 0px;
+  background-color: #ffffff;
+  background: url("../images/jb_bg.png") no-repeat center;
+  min-height: 100%;
+  height: auto;
+}
+
+body  {
+  font-family: "Droid Sans", serif;
+  font-size: 1rem;
+  line-height: 160%;
+  *zoom: 1;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: fantasy, serif;
+  font-weight: normal;
+  color: #31480b;
+  text-shadow: 1px 1px rgb(255,255,255);
+}
+
+a {
+  color: #37510b;
+  font-family: Bree Serif, serif;
+}
+
+h1{
+  color: #5b880f;
+  background: rgba(255, 255, 255, 0.50);
+  font-size: 2.2rem;
+  line-height: 100%;
+  margin-bottom: 0px;
+}
+
+h2{ 
+  font-size: 1.5rem;
+  line-height: 90%;
+  color: #5b880f;
+}
+
+.content h3{
+  position: relative;
+  bottom: 20px;
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.50);
+  color: #accf0b;
+  line-height: 110%;
+  text-indent: 140px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  -moz-border-radius-bottomleft: 16px;
+  -moz-border-radius-bottomright: 16px;
+  -webkit-border-bottom-left-radius: 16px;
+  -webkit-border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+p {
+  line-height: 1.3rem;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: '';
+}
+
+a.small {
+  line-height: 100%;
+  font-size: .9rem;
+}
+
+/* search css styles */
+
+.search {
+  position: relative;
+  top: 30px;
+  background: rgba(49, 72, 11, 0.40);
+  color: #c0d072;
+  width: 90%;
+  min-width: 320px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  z-index: 20;
+}
+
+.search h1 {
+  position: relative;
+  bottom: 10px;
+  color: #b2d60a;
+  background-color: rgba(49, 72, 11, 0.11);
+}
+
+#btn_wrap {
+    position: relative;
+    left: 44%;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 140%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background: #47630A;
+    color: #FCF4DC;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.btn .btn-left {
+  float: left;
+}
+
+.btn .btn-right {
+  float: right;
+}
+
+.btn:hover {
+    background: #8bbc0a;
+}
+
+.search label {
+  display: none;
+}
+
+.search input {
+  font-family: 'Droid Sans', sans-serif;
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #5b880f;
+  background: rgba(255, 255, 255, 0.51);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  outline: 0;
+}
+
+.search .formgroup input {
+  border: 1px solid rgba(0,0,0,0.3);
+  display: inline;
+  width: auto;
+}
+
+.search label.formgroup {
+  position: relative;
+  top: 10px;
+  display: inline;
+  width: auto;
+}
+
+.search select {
+  display: inline;
+  padding: 10px 0 10px 15px;
+  font-size: 1rem;
+  color: #31480b;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  outline: 0;
+}
+
+/* animal directory css styles */
+
+.animal_dir {
+  position: relative;
+  top: 30px;
+  background: hsla(36,18%,59%,.30);
+  width: 50%;
+  min-width: 290px;
+  max-width:1050px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 20px 20px 20px 20px;
+  z-index: 10;
+}
+
+.animal_dir ul {
+  margin: 0;
+  padding: 0;
+  background: #FDF6E3;
+}
+
+.animal_dir li {
+  display: inline-block;
+  margin: 0px 0px 0px 25px;
+  padding: 10px 10px 80px 10px;
+  max-width: 325px;
+  background-color: hsla(65,40%,83%,0.6)
+  opacity: .9;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.animal_dir a {
+  display: block;
+  text-decoration: none;
+}
+
+.animal_dir li:hover {
+  background: #FDF6E3;
+  opacity: .8;
+  border-radius: 20px 20px 20px 20px;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.animal img {
+  position: relative;
+  left: 0px;
+  display: inline-block;
+  width: 60px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.animal content {
+  display: block;
+  float: left;
+  padding-left: 120px !important;
+}
+
+.animal:last-child {
+  border-bottom:none;
+}
+
+.animal_info {
+  position: relative;
+  top: 160px;
+  font-size: .9em;
+  line-height: 200%;
+  background: hsla(36,18%,59%,.30) url("../images/vines.png") no-repeat center;
+  color: black;
+  width: 90%;
+  min-width: 320px;
+  max-width: 620px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px 30px;
+  border-radius: 16px;
+  z-index: 20;
+}
+
+.animal_info h1{
+  position: relative;
+  bottom: 20px;
+  font-size: 1.8em;
+  padding-bottom: 5px;
+  text-indent: 140px;
+}
+
+.animal_info img {
+  width: 40%;
+  max-width: 130px;
+  border-radius: 20px;
+}
+
+.animal.ng-enter.ng-enter-active,
+.animal.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.animal.ng-leave.ng-leave-active,
+.animal.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.info h2 {
+    margin-top: 0;
+    color: #c6763f;
+    line-height: 110%;
+    text-indent: 0px;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.info h3 {
+    margin-top: 0;
+    color: #b2d60a;
+    line-height: 110%;
+    text-indent: 0px;
+    margin-bottom: 5px;
+}
+
+#srch_link {
+    display: block;
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 650px;
+    font-family: fantasy, serif;
+    font-size: 1em;
+    text-align: center;
+    color: #8bbc0a;
+    clear: left;
+}

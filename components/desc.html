@@ -1,0 +1,27 @@
+<!--
+Aaron Robert Wilson
+October 14, 2015 - Week 3
+FWF Course | 201510-01
+Student ID: 0004619821
+Professor: Sean Bernath
+Full Sail University
+
+Assignment - C.R.U.D. Application - desc.html
+-->
+
+<section class="animal_info">
+  <div class="animal cf" ng-model="animals">
+
+    <h1>{{animals[whichItem].animal_name}}</h1>
+    <div class="content">
+      <h3>{{animals[whichItem].animal_location}}</h3>
+      <img ng-src="images/{{animals[whichItem].animal_common}}_jb.png" alt="Photo of {{animals[whichItem].animal_name}}">
+      <div class="animal_desc">{{animals[whichItem].animal_info}}</div>
+    </div>
+  </div>
+    <div id="btn_wrap">
+    <a href="#/desc/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/desc/{{nextItem}}" class="btn btn-right">&gt;</a>
+    </div>
+  <a id="srch_link" href="index.html">&laquo; Back to search</a>
+</section>
