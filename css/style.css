@@ -357,7 +357,7 @@ a.small {
 .animal_info h3 {
     position: relative;
     bottom: 30px;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 5px 0px 5px 0px;
     text-indent: 180px;
 }
