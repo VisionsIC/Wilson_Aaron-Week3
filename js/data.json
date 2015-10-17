@@ -1,10 +1,17 @@
 [
   {
-    "animal_name":"African Rock Python",
+    "animal_name":"Rock Python",
     "animal_common":"python",
     "animal_location":"Central Africa",
     "animal_info":"The African rock python lives in the tropical African savanna that stretches through Africa like a belt. At 30 ft. in length, it is the third largest snake in the world. The African rock python is the only large snake found on the African continent. It is very bulky and has a dark arrowhead shape on its head. Brown blotches outlined by black on tan background surround its body.They can get to be over 250 lbs."
   },
+  {
+    "animal_name":"African Giraffe",
+    "animal_common":"giraffe",
+    "animal_location":"South Africa",
+    "animal_info":"Giraffes are the world's tallest mammals, thanks to their towering legs and long necks. A giraffe's legs alone are taller than many humans—about 6 feet (1.8 meters). These long legs allow giraffes to run as fast as 35 miles (56 kilometers) an hour over short distances and cruise comfortably at 10 miles (16 kilometers) an hour over longer distances."
+  },
+
   {
     "animal_name":"African Zebra",
     "animal_common":"zebra",
@@ -24,7 +31,7 @@
     "animal_info":"The cheetah's habitat has been reduced by 76%, and they occur widely but sparsely in the regions they still inhabit. Southern and Eastern Africa are strongholds for cheetah populations."
   },
   {
-    "animal_name":"Afican Bushbuck",
+    "animal_name":"African Bushbuck",
     "animal_common":"bushbuck",
     "animal_location":"East Africa",
     "animal_info":"he shy and elusive bushbuck is widely distributed over sub-Saharan Africa. In East Africa it is found in a variety of habitats, though rarely on open land. Bushbucks have a lot of individual and regional differences in their coat colors and patterns. As many as 40 varieties have been described. In general, bushbuck inhabiting deep forest have darker coats."
@@ -48,8 +55,8 @@
     "animal_info":"One of the three species of crocodile found in Africa, the Nile crocodile is the second largest crocodile in the world, reaching a typical adult length of 5 metres (16.4 feet). The Nile crocodile is quite widespread throughout sub-Saharan Africa, the Nile Basin, and Madagascar in rivers, freshwater marshes, and mangrove swamps. On average the Nile crocodile is between 4 metres (13.1 feet) to 5 metres (16.4 feet), weighing around 410 kg (900 lb). However, specimens measuring 6 metres (19.6 feet) in length and weighing 900 kg (2,000 lb) are not uncommon."
   },
   {
-    "animal_name":"Western Lowland Gorilla",
-    "animal_common":"Gorilla",
+    "animal_name":"Lowland Gorilla",
+    "animal_common":"gorilla",
     "animal_location":"Central Africa",
     "animal_info":"Western lowland gorillas are endangered, but they remain far more common than their relatives, the mountain gorillas. They live in heavy rain forests, and it is difficult for scientists to accurately estimate how many survive in Cameroon, Central African Republic, Congo, Equatorial Guinea, Gabon, Angola, and the Democratic Republic of Congo."
   }

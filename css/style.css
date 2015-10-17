@@ -306,14 +306,13 @@ a.small {
   transform: scale(1.2);
 }
 
-.animal img {
+.animal_dir img {
   position: relative;
-  left: 0px;
+  left: 20%;
   display: inline-block;
   width: 60px;
   -webkit-border-radius: 12px;
   border-radius: 12px;
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
@@ -332,7 +331,7 @@ a.small {
   top: 160px;
   font-size: .9em;
   line-height: 200%;
-  background: hsla(36,18%,59%,.30) url("../images/vines.png") no-repeat center;
+  background: hsla(36,18%,59%,.30);
   color: black;
   width: 90%;
   min-width: 320px;
@@ -341,6 +340,7 @@ a.small {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 20px 30px;
+  border: rgba(49, 72, 11, 0.10) 1px groove;
   border-radius: 16px;
   z-index: 20;
 }
@@ -349,14 +349,24 @@ a.small {
   position: relative;
   bottom: 20px;
   font-size: 1.8em;
-  padding-bottom: 5px;
-  text-indent: 140px;
+  padding: 5px 0px 5px 0px;
+  text-indent: 180px;
+  line-height: 2em;
+}
+
+.animal_info h3 {
+    position: relative;
+    bottom: 30px;
+    font-size: 1em;
+    padding: 5px 0px 5px 0px;
+    text-indent: 180px;
 }
 
 .animal_info img {
   width: 40%;
   max-width: 130px;
   border-radius: 20px;
+  margin-left: 40%;
 }
 
 .animal.ng-enter.ng-enter-active,
